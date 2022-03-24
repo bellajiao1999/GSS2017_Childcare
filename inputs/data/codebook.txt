@@ -1,0 +1,2671 @@
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                      CODEBOOK
+
+
+                General Social Survey (GSS), Cycle 31, 2017: Family
+                                          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family               Page i
+
+
+                                      CONTENTS
+
+
+      item                                                                page
+
+      CASEID                                                                 1
+      ngrdchdc           Number of grandchildren the respondent has.         1
+      pumfid             Record identification                               1
+      ats_120            Agreement/Arrangement to schedule time children     2
+      ats_130            Type of arrangement for time spent with children    2
+      ats_140            Arrangements overall  followed - Past 12 months     3
+      ats_145            Main reason arrangement was not followed?           3
+      cc_10_1            Arran. (first name child_1) to be look. after -     3
+      cc_20_1            Childcare arrangement used on regular or irregul    4
+      cc_30_1            Main childcare arrangement currently using - Chi    4
+      cc_40_1            Person taking care of child is a relative or a n    4
+      cc_50_1            Government licensed or family daycare agency app    5
+      cc_60_1            Main reason chose childcare type - Child_1          5
+      cca50_1            Past month, how oft. used child care arra. for (    6
+      cca551c            Number of hours per week                            6
+      cca651c            Amount spent for child care arrangement - Child     7
+      cca70_1            Costs                                               7
+      ccdyc1c            Average costs of child care arrangement (per day    8
+      ccmoc1c            Average costs of child care arrangement (per mon    8
+      ccw2c1c            Average costs of child care arrangement (per 2 w    9
+      ccwkc1c            Average costs of child care arrangement (per wee    9
+      totccar            Resp has used a form of regular childcare arrang    9
+      totccps            Resp used childcare arrang. for at least one pre   10
+      totccsa            Resp used childcare arrangement for at least one   10
+      cor_015            Lived with step-children                           10
+      cor_020            Adopted children                                   11
+      cor_031            Ever fathered child                                11
+      cor_041            Ever given birth to a child                        11
+      cp30_1c            Main reason for not using preferred form of chil   12
+      cp_10_1            Prefer to use different form of childcare care -   12
+      cp_20_1            Preferred type of childcare - Child_1              13
+      csp_100            Ever provide or received financial support for c   13
+      csp_105            Currently provide or receive financial support f   14
+      csp_110a           Financial support - Child support (periodic paym   14
+      csp_110b           Financial support - Childs expenses              14
+      csp_110c           Financial support - A lump sum amount              15
+      csp_110d           Financial support - Other                          15
+      csp_150            Arrangement/Agreement for financial support of c   15
+      csp_160            Arrangement/agreement financial support for chil   16
+      csp_170            Arrangement registered Maintenance Enforcement P   16
+      acompstc           Age of respondent when completed studies           16
+      ede_01a            Type of educational institution - Elementary/hig   17
+      ede_01b            Type of educational institution - Trade school,    17
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page ii
+
+
+      item                                                                page
+
+      ede_01c            Type of educational institution - University       17
+      ede_02             Education - Enrollment status                      18
+      eop_200            Highest level of education - Spouse/Partner        18
+      eop_210            High school diploma/equivalency certificate        19
+      eop_220            Trade certificate or diploma                       19
+      eop_230            College, CEGEP or other non-university certifica   19
+      eop_240            University certificate, diploma or degree above    20
+      fse_100            Ever provided or received financ. supp. for/from   20
+      fse_105            Currently providing/receiving finan. sup. for/fr   21
+      fse_110a           Financial support - Periodic payments              21
+      fse_110b           Financial support - Gave a lump sum amount or sp   21
+      fse_110c           Financial support - Contribution to household co   22
+      fse_110d           Financial support - Other                          22
+      fsp135gr           Total child support amount paid - Past 12 months   22
+      fsp_130            Frequency financial support being paid             23
+      fsp_320            Paid all payment according to arrangement          23
+      fsr135gr           Total child support amount received - Past 12 mo   23
+      fsr_130            Frequency received financial support               24
+      fsr_310            Received all support from ex-spouse/partner acco   24
+      mdc_117            Division major decisions about childrens healt   25
+      mdc_120            Agreement for important decisions                  25
+      mdc_130            Arrangement/agreement for important decisions      26
+      bapast5y           Respondent had a birth/adopted child - Past 5 ye   26
+      mpl_105a           Main activity - Working at a paid job/business     26
+      mpl_105b           Main activity - Looking for paid work              27
+      mpl_105c           Main activity - Going to school                    27
+      mpl_105d           Main activity - Caring for children                27
+      mpl_105e           Main activity - Household work                     28
+      mpl_105i           Main activity - Other - Specify                    28
+      mpl_107            Type of student                                    28
+      mpl_108            Job or self-employed - Before the birth/adoption   29
+      nuc1_1c            Main reason for not using childcare arrangements   29
+      nuc2_1c            Main reason for not regular. using childcare arr   30
+      nwe_110            Number of weeks employed - Past 12 months          30
+      oto_100            Other parent take time off before/after birth/ad   30
+      rew_10             Ever worked at paid job/own business               31
+      worklw             Respondent worked at paid job or business last w   31
+      worklyr            Respondent worked at paid job or business last y   31
+      rto_100            Main type of work                                  32
+      rto_101            Full-time/Part-time job                            32
+      rto_110            Respondent took time off from job  before/after    32
+      rto_120            Main reason didn't take time off - After birth/a   33
+      rto_130a           Type of leave - Paternity/Maternity leave          33
+      rto_130b           Type of leave - Parental leave                     34
+      rto_130c           Type of leave - Vacation                           34
+      rto_130d           Type of leave - Leave without pay                  34
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family             Page iii
+
+
+      item                                                                page
+
+      rto_130e           Type of leave - Employer program                   35
+      rto_130f           Type of leave - Sick leave                         35
+      rto_130g           Type of leave - Other                              35
+      arretwk            Age of youngest child when resp returned to work   36
+      rtw_300            Respondent returned to same job                    36
+      sts_410            Satisfaction amount of time spent with child(ren   36
+      sts_420            Main reason for being dissatisfied - Respondent    37
+      sts_450            Satisfaction amount of time ex-spouse/ex-partner   37
+      sts_460            Main reason for being dissatisfied - Ex-spouse/p   38
+      tsa_010            Person child usually lived with - Past 12 months   38
+      tsa_020            Percentage of time resp. lived with child - Past   39
+      tsa_030            Frequency respondent seeing child - Past 12 mont   39
+      tsa_040            Communication frequency with respondent  - Past    40
+      tsa_050            Average number of overnights child spent with re   40
+      tsa_060            Average num. of overnights child spent with resp   40
+      tsa_070            Frequency ex-spouse/partner seeing child -  - Pa   41
+      tsa_080            Frequency communication with ex-spouse/partner -   41
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family               Page 1
+
+
+      CASEID
+
+           Data type: numeric
+           Record/columns: 1/1-5
+
+      ________________________________________________________________________
+
+      ngrdchdc           Number of grandchildren the respondent has.
+
+           VALUE  LABEL
+               0  None
+              15  15 or more grandchildren
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/columns: 1/7-8
+
+      ________________________________________________________________________
+
+      pumfid             Record identification
+
+           VALUE  LABEL
+           99996  Valid skip
+           99997  Don't know
+           99998  Refusal
+           99999  Not stated
+
+           Data type: numeric
+           Missing-data codes: 99996-99999
+           Record/columns: 1/10-14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family               Page 2
+
+
+      ats_120            Agreement/Arrangement to schedule time children spend with each parent
+
+           VALUE  LABEL
+               1  Verbal only
+               2  Written only
+               3  Both verbal and written
+               4  No arrangement or agreement
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/16
+
+      ________________________________________________________________________
+
+      ats_130            Type of arrangement for time spent with children
+
+           VALUE  LABEL
+               1  You and your (ex-spouse/ex-partner/ex-spouse/ex-spouse or...
+               2  With assistance, such as mediation, a lawyer, other fami...
+               3  A court order
+               4  Other
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/18
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family               Page 3
+
+
+      ats_140            Arrangements overall  followed - Past 12 months
+
+           VALUE  LABEL
+               1  All of the time
+               2  Most of the time
+               3  Sometimes
+               4  Rarely
+               5  Never
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/20
+
+      ________________________________________________________________________
+
+      ats_145            Main reason arrangement was not followed?
+
+           VALUE  LABEL
+               1  General conflict
+               2  Arrangements no longer worked - changed circumstances
+               3  You or your (ex-spouse/ex-partner/ex-spouse/ex-spouse or...
+               4  Other
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/22
+
+      ________________________________________________________________________
+
+      cc_10_1            Arran. (first name child_1) to be look. after - Past 12 mths - Child_1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/24
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family               Page 4
+
+
+      cc_20_1            Childcare arrangement used on regular or irregular basis
+
+           VALUE  LABEL
+               1  On a regular basis
+               2  On an irregular or occasional basis
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/26
+
+      ________________________________________________________________________
+
+      cc_30_1            Main childcare arrangement currently using - Child_1
+
+           VALUE  LABEL
+               1  In the child's home
+               2  A home daycare
+               3  A preschool centre or a nursery school
+               4  A daycare (or CPE/EMPTY)
+               5  Before or after school program
+               6  Another type of childcare
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/columns: 1/28-29
+
+      ________________________________________________________________________
+
+      cc_40_1            Person taking care of child is a relative or a non-relative
+
+           VALUE  LABEL
+               1  A relative
+               2  A non-relative
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/31
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family               Page 5
+
+
+      cc_50_1            Government licensed or family daycare agency approved - Child_1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/33
+
+      ________________________________________________________________________
+
+      cc_60_1            Main reason chose childcare type - Child_1
+
+           VALUE  LABEL
+               1  Location (close to work, home, school, etc.)
+               2  Affordable cost
+               3  Hours of operation
+               4  Care by someone trustworthy (family member, friend)
+               5  My other children go (have gone) there
+               6  Was recommended by someone
+               7  It is safe
+               8  Only option available
+               9  Learning program
+              10  For the child's socialization
+              11  Low child-adult ratio/more employees/one on one time
+              12  Other - Specify
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/columns: 1/35-36
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family               Page 6
+
+
+      cca50_1            Past month, how oft. used child care arra. for (first name of child_1)
+
+           VALUE  LABEL
+               1  1 day per week
+               2  2 days per week
+               3  3 days per week
+               4  4 days per week
+               5  5 days per week
+               6  6 days per week or more
+               7  A few times a month
+               8  Not in the last month
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/columns: 1/38-39
+
+      ________________________________________________________________________
+
+      cca551c            Number of hours per week
+
+           VALUE  LABEL
+               1  Less than 10 hours
+               2  10 to 19 hours
+               3  20 to 29 hours
+               4  30 to 39 hours
+               5  40 hours and more
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/41
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family               Page 7
+
+
+      cca651c            Amount spent for child care arrangement - Child 1
+
+           VALUE  LABEL
+               1  $0
+               2  Less than $100
+               3  $100 to $499
+               4  $500 to $999
+               5  $1,000 and more
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/43
+
+      ________________________________________________________________________
+
+      cca70_1            Costs
+
+           VALUE  LABEL
+               1  Per day
+               2  Per week
+               3  Every two weeks
+               4  Per month
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/45
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family               Page 8
+
+
+      ccdyc1c            Bapast5y - Child_1
+
+           VALUE  LABEL
+               1  $0
+               2  $0.01 to $9.99
+               3  $10.00 to $19.99
+               4  $20.00 to $29.00
+               5  $30.00 to $39.99
+               6  $40.00 to $49.99
+               7  $50.00 and more
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/columns: 1/47-48
+
+      ________________________________________________________________________
+
+      ccmoc1c            Average costs of child care arrangement (per month) - Child_1
+
+           VALUE  LABEL
+               1  $0
+               2  $0.01 to $99.99
+               3  $100.00 to $199.99
+               4  $200.00 to $299.99
+               5  $300.00 to $399.99
+               6  $400.00 to $499.99
+               7  $500.00 and more
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/columns: 1/50-51
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family               Page 9
+
+
+      ccw2c1c            Average costs of child care arrangement (per 2 weeks) - Child_1
+
+           VALUE  LABEL
+               1  $0
+               2  $0.01 and more
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/53
+
+      ________________________________________________________________________
+
+      ccwkc1c            Average costs of child care arrangement (per week) - Child_1
+
+           VALUE  LABEL
+               1  $0
+               2  $0.01 to $49.99
+               3  $50.00 to $99.99
+               4  $100.00 to $199.99
+               5  $200.00 and more
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/55
+
+      ________________________________________________________________________
+
+      totccar            Resp has used a form of regular childcare arrang for at least 1 child
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/57
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 10
+
+
+      totccps            Resp used childcare arrang. for at least one pre-school aged children
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/59
+
+      ________________________________________________________________________
+
+      totccsa            Resp used childcare arrangement for at least one school aged child
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/61
+
+      ________________________________________________________________________
+
+      cor_015            Lived with step-children
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/63
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 11
+
+
+      cor_020            Adopted children
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/65
+
+      ________________________________________________________________________
+
+      cor_031            Ever fathered child
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/67
+
+      ________________________________________________________________________
+
+      cor_041            Ever given birth to a child
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/69
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 12
+
+
+      cp30_1c            Main reason for not using preferred form of childcare - Child_1
+
+           VALUE  LABEL
+               1  The cost is too high
+               2  No places available / on a waiting list
+               3  No relatives in the area
+               4  Cannot afford to stay home
+               5  Other reason
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/columns: 1/71-72
+
+      ________________________________________________________________________
+
+      cp_10_1            Prefer to use different form of childcare care - Child_1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/74
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 13
+
+
+      cp_20_1            Preferred type of childcare - Child_1
+
+           VALUE  LABEL
+               1  Child cared for by respondent or spouse (full-time or pa...
+               2  Care in someone's home by a non-relative
+               3  Care in someone's home by a relative
+               4  Care in child's home by a non-relative
+               5  Care in child's home by a relative
+               6  Daycare centre (or CPE/Blank)
+               7  Before and after school program
+               8  Nursery school / preschool
+               9  Other
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/columns: 1/76-77
+
+      ________________________________________________________________________
+
+      csp_100            Ever provide or received financial support for children
+
+           VALUE  LABEL
+               1  Yes, provided financial support
+               2  Yes, received financial support
+               3  Yes, I have provided and received
+               4  No, did not provide nor receive
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/79
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 14
+
+
+      csp_105            Currently provide or receive financial support for children
+
+           VALUE  LABEL
+               1  Yes, providing financial support
+               2  Yes, receiving financial support
+               3  Yes, providing and receiving
+               4  No, neither providing nor receiving
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/81
+
+      ________________________________________________________________________
+
+      csp_110a           Financial support - Child support (periodic payments)
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/83
+
+      ________________________________________________________________________
+
+      csp_110b           Financial support - Childs expenses
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/85
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 15
+
+
+      csp_110c           Financial support - A lump sum amount
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/87
+
+      ________________________________________________________________________
+
+      csp_110d           Financial support - Other
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/89
+
+      ________________________________________________________________________
+
+      csp_150            Arrangement/Agreement for financial support of children
+
+           VALUE  LABEL
+               1  Verbal only
+               2  Written only
+               3  Both verbal and written
+               4  No arrangement or agreement
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/91
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 16
+
+
+      csp_160            Arrangement/agreement financial support for children
+
+           VALUE  LABEL
+               1  You and your (ex-spouse/ex-partner/ex-spouse/ex-spouse or...
+               2  With assistance, such as mediation, a lawyer, other fami...
+               3  A court order
+               4  Other
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/93
+
+      ________________________________________________________________________
+
+      csp_170            Arrangement registered Maintenance Enforcement Program
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/95
+
+      ________________________________________________________________________
+
+      acompstc           Age of respondent when completed studies
+
+           VALUE  LABEL
+              15  15 years and under
+              40  40 years and over
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/columns: 1/97-98
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 17
+
+
+      ede_01a            Type of educational institution - Elementary/high school
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/100
+
+      ________________________________________________________________________
+
+      ede_01b            Type of educational institution - Trade school, college
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/102
+
+      ________________________________________________________________________
+
+      ede_01c            Type of educational institution - University
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/104
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 18
+
+
+      ede_02             Education - Enrollment status
+
+           VALUE  LABEL
+               1  A full-time student
+               2  A part-time student
+               3  Both full-time and part-time student
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/106
+
+      ________________________________________________________________________
+
+      eop_200            Highest level of education - Spouse/Partner
+
+           VALUE  LABEL
+               1  Less than high school diploma or its equivalent
+               2  High school diploma or a high school equivalency  certi...
+               3  Trade certificate or diploma
+               4  College, CEGEP or other non-university certificate or d...
+               5  University certificate or diploma below the bachelor's level
+               6  Bachelor's degree (e.g. B.A., B.Sc., LL.B.)
+               7  University certificate, diploma or degree above the  ba...
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/columns: 1/108-109
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 19
+
+
+      eop_210            High school diploma/equivalency certificate
+
+           VALUE  LABEL
+               1  High school graduation diploma
+               2  High school equivalency certificate (such as General Edu...
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/111
+
+      ________________________________________________________________________
+
+      eop_220            Trade certificate or diploma
+
+           VALUE  LABEL
+               1  Registered Apprenticeship certificate (including Certifi...
+               2  Other trades certificate or diploma from a trade school ...
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/113
+
+      ________________________________________________________________________
+
+      eop_230            College, CEGEP or other non-university certificate or diploma
+
+           VALUE  LABEL
+               1  Less than 3 months
+               2  3 months to less than 1 year
+               3  1 year to 2 years
+               4  More than 2 years
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/115
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 20
+
+
+      eop_240            University certificate, diploma or degree above the bachelor's level
+
+           VALUE  LABEL
+               1  University certificate or diploma above the bachelor's level
+               2  Degree in medicine/dentistry/veterinary medicine/optometry
+               3  Master's degree
+               4  Earned doctorate
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/117
+
+      ________________________________________________________________________
+
+      fse_100            Ever provided or received financ. supp. for/from ex-spouse/Ex-partner
+
+           VALUE  LABEL
+               1  Yes, provided financial support
+               2  Yes, received financial support
+               3  Yes, I have provided and received
+               4  No, did not provide nor receive
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/119
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 21
+
+
+      fse_105            Currently providing/receiving finan. sup. for/from- Ex-spou./Ex-partn.
+
+           VALUE  LABEL
+               1  Yes, providing financial support
+               2  Yes, receiving financial support
+               3  Yes, providing and receiving
+               4  No, neither providing nor receiving
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/121
+
+      ________________________________________________________________________
+
+      fse_110a           Financial support - Periodic payments
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/123
+
+      ________________________________________________________________________
+
+      fse_110b           Financial support - Gave a lump sum amount or specific asset
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/125
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 22
+
+
+      fse_110c           Financial support - Contribution to household costs or other expenses
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/127
+
+      ________________________________________________________________________
+
+      fse_110d           Financial support - Other
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/129
+
+      ________________________________________________________________________
+
+      fsp135gr           Total child support amount paid - Past 12 months
+
+           VALUE  LABEL
+               1  Less than $3,000
+               2  $3,000 to $4,999
+               3  $5,000 to $9,999
+               4  $10,000 and more
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/131
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 23
+
+
+      fsp_130            Frequency financial support being paid
+
+           VALUE  LABEL
+               1  Weekly
+               2  Bi-weekly
+               3  Monthly
+               4  Other (in one lump sum, irregularly, as needed, etc.)
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/133
+
+      ________________________________________________________________________
+
+      fsp_320            Paid all payment according to arrangement
+
+           VALUE  LABEL
+               1  The full amount
+               2  Less than full amount
+               3  Nothing
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/135
+
+      ________________________________________________________________________
+
+      fsr135gr           Total child support amount received - Past 12 months
+
+           VALUE  LABEL
+               1  Less than $3,000
+               2  $3,000 to $4,999
+               3  $5,000 to $9,999
+               4  $10,000 and more
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/137
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 24
+
+
+      fsr_130            Frequency received financial support
+
+           VALUE  LABEL
+               1  Weekly
+               2  Bi-weekly
+               3  Monthly
+               4  Other (in one lump sum, irregularly, as needed, etc.)
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/139
+
+      ________________________________________________________________________
+
+      fsr_310            Received all support from ex-spouse/partner according to arrangement
+
+           VALUE  LABEL
+               1  Never missed a payment (made all payments on time and full)
+               2  Made all payments but some or all were late
+               3  Missed a few payments that were due (a few payments were...
+               4  Missed most or all payments
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/141
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 25
+
+
+      mdc_117            Division major decisions about childrens health, relig. and/or edu.
+
+           VALUE  LABEL
+               1  You and your (ex-spouse/ex-partner/ex-spouse/ex-spouse o...
+               2  Mainly you
+               3  Mainly your (ex-spouse/ex-partner/ex-spouse/ex-spouse or...
+               4  Someone else
+               5  Varies depending on what the decision is
+               6  Other
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/columns: 1/143-144
+
+      ________________________________________________________________________
+
+      mdc_120            Agreement for important decisions
+
+           VALUE  LABEL
+               1  Verbal only
+               2  Written only
+               3  Both verbal and written
+               4  No arrangement or agreement
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/146
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 26
+
+
+      mdc_130            Arrangement/agreement for important decisions
+
+           VALUE  LABEL
+               1  You and your (ex-spouse/ex-partner/ex-spouse/ex-spouse or...
+               2  With assistance, such as mediation, a lawyer, other fami...
+               3  A court order
+               4  Other
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/148
+
+      ________________________________________________________________________
+
+      bapast5y           Respondent had a birth/adopted child - Past 5 years
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/150
+
+      ________________________________________________________________________
+
+      mpl_105a           Main activity - Working at a paid job/business
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/152
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 27
+
+
+      mpl_105b           Main activity - Looking for paid work
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/154
+
+      ________________________________________________________________________
+
+      mpl_105c           Main activity - Going to school
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/156
+
+      ________________________________________________________________________
+
+      mpl_105d           Main activity - Caring for children
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/158
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 28
+
+
+      mpl_105e           Main activity - Household work
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/160
+
+      ________________________________________________________________________
+
+      mpl_105i           Main activity - Other - Specify
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/162
+
+      ________________________________________________________________________
+
+      mpl_107            Type of student
+
+           VALUE  LABEL
+               1  A full-time student
+               2  A part-time student
+               3  Both full-time and part-time student
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/164
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 29
+
+
+      mpl_108            Job or self-employed - Before the birth/adoption
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/166
+
+      ________________________________________________________________________
+
+      nuc1_1c            Main reason for not using childcare arrangements - Child_1
+
+           VALUE  LABEL
+               1  Unemployed
+               2  Maternity, paternity or parental leave
+               3  One of the parents wishes to stay at home with the child
+               4  Doesnt need or doesnt want
+               5  Work or school schedules are unpredictable and variable
+               6  The cost of childcare is too high
+               7  Other reason
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/columns: 1/168-169
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 30
+
+
+      nuc2_1c            Main reason for not regular. using childcare arrangements - Child_1
+
+           VALUE  LABEL
+               1  Unemployed
+               2  Maternity, paternity or parental leave
+               3  One of the parents wishes to stay at home with the child
+               4  Doesnt need or doesnt want
+               5  Work or school schedules are unpredictable and variable
+               6  The cost of childcare is too high
+               7  Other reason
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/columns: 1/171-172
+
+      ________________________________________________________________________
+
+      nwe_110            Number of weeks employed - Past 12 months
+
+           VALUE  LABEL
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/columns: 1/174-175
+
+      ________________________________________________________________________
+
+      oto_100            Other parent take time off before/after birth/adoption
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               3  Not applicable - Other parent was not working before bir...
+               4  No other parent involved
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/177
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 31
+
+
+      rew_10             Ever worked at paid job/own business
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/179
+
+      ________________________________________________________________________
+
+      worklw             Respondent worked at paid job or business last week
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/181
+
+      ________________________________________________________________________
+
+      worklyr            Respondent worked at paid job or business last year (yes/no)
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/183
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 32
+
+
+      rto_100            Main type of work
+
+           VALUE  LABEL
+               1  A paid worker
+               2  Self-employed
+               3  An unpaid family worker
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/185
+
+      ________________________________________________________________________
+
+      rto_101            Full-time/Part-time job
+
+           VALUE  LABEL
+               1  Full-time
+               2  Part-time
+               3  Other (on call, contract)
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/187
+
+      ________________________________________________________________________
+
+      rto_110            Respondent took time off from job  before/after birth/adoption
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/189
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 33
+
+
+      rto_120            Main reason didn't take time off - After birth/adoption
+
+           VALUE  LABEL
+               1  Other parent took leave
+               2  Not eligible for leave/Self-employed
+               3  Could not afford to lose a/my salary
+               4  Worried of losing job
+               5  Family or friends take care of child
+               6  Found available/convenient daycare
+               7  Preferred to work
+               8  Job permitted to take care of the child and work
+               9  Quit job/Fired/Discharged/Laid-off
+              10  Other
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/columns: 1/191-192
+
+      ________________________________________________________________________
+
+      rto_130a           Type of leave - Paternity/Maternity leave
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/194
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 34
+
+
+      rto_130b           Type of leave - Parental leave
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/196
+
+      ________________________________________________________________________
+
+      rto_130c           Type of leave - Vacation
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/198
+
+      ________________________________________________________________________
+
+      rto_130d           Type of leave - Leave without pay
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/200
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 35
+
+
+      rto_130e           Type of leave - Employer program
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/202
+
+      ________________________________________________________________________
+
+      rto_130f           Type of leave - Sick leave
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/204
+
+      ________________________________________________________________________
+
+      rto_130g           Type of leave - Other
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/206
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 36
+
+
+      arretwk            Age of youngest child when resp returned to work - Months
+
+           VALUE  LABEL
+            99.6  Valid skip
+            99.7  Don't know
+            99.8  Refusal
+            99.9  Not stated
+
+           Data type: numeric
+           Decimals: 1
+           Missing-data codes: 99.6-99.9
+           Record/columns: 1/208-211
+
+      ________________________________________________________________________
+
+      rtw_300            Respondent returned to same job
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/213
+
+      ________________________________________________________________________
+
+      sts_410            Satisfaction amount of time spent with child(ren)
+
+           VALUE  LABEL
+               1  Very satisfied
+               2  Satisfied
+               3  Dissatisfied
+               4  Very dissatisfied
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/215
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 37
+
+
+      sts_420            Main reason for being dissatisfied - Respondent
+
+           VALUE  LABEL
+               1  (Ex-spouse/Ex-partner) often changes his or her time wit...
+               2  (Ex-spouse/Ex-partner) cancels time with the child and d...
+               3  Would like to have a different amount of time spent with...
+               4  Concerned about poor behaviour or parenting
+               5  Other - Specify
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/217
+
+      ________________________________________________________________________
+
+      sts_450            Satisfaction amount of time ex-spouse/ex-partner spends with children
+
+           VALUE  LABEL
+               1  Very satisfied
+               2  Satisfied
+               3  Dissatisfied
+               4  Very dissatisfied
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/219
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 38
+
+
+      sts_460            Main reason for being dissatisfied - Ex-spouse/partner
+
+           VALUE  LABEL
+               1  (Ex-spouse/Ex-partner) often changes his or her time wit...
+               2  (Ex-spouse/Ex-partner) cancels time with the child and d...
+               3  Would like to have a different amount of time spent with...
+               4  Concerned about poor behaviour or parenting
+               5  Other - Specify
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/221
+
+      ________________________________________________________________________
+
+      tsa_010            Person child usually lived with - Past 12 months
+
+           VALUE  LABEL
+               1  Only with you
+               2  Mainly with you
+               3  Only with your (ex-spouse/ex-partner/ex-spouse/ex-spouse...
+               4  Mainly with your (ex-spouse/ex-partner/ex-spouse/ex-spou...
+               5  About the same amount of time in both parents home
+               6  Another arrangement
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/columns: 1/223-224
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 39
+
+
+      tsa_020            Percentage of time resp. lived with child - Past 12 months
+
+           VALUE  LABEL
+               1  Less than 40%
+               2  Between 40% and 60%
+               3  More than 60%
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/226
+
+      ________________________________________________________________________
+
+      tsa_030            Frequency respondent seeing child - Past 12 months
+
+           VALUE  LABEL
+               1  Daily
+               2  At least once a week
+               3  At least once a month
+               4  Less than once a month
+               5  Not at all
+               6  Other
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/columns: 1/228-229
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 40
+
+
+      tsa_040            Communication frequency with respondent  - Past 12 months
+
+           VALUE  LABEL
+               1  Daily
+               2  At least once a week
+               3  At least once a month
+               4  Less than once a month
+               5  Not at all
+               6  Other
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/columns: 1/231-232
+
+      ________________________________________________________________________
+
+      tsa_050            Average number of overnights child spent with resp. - 2 weeks period
+
+           VALUE  LABEL
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/columns: 1/234-235
+
+      ________________________________________________________________________
+
+      tsa_060            Average num. of overnights child spent with respondent - Typical month
+
+           VALUE  LABEL
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/columns: 1/237-238
+
+
+
+
+
+
+
+
+                                   March 14, 2022
+
+
+
+      General Social Survey (GSS), Cycle 31, 2017: Family              Page 41
+
+
+      tsa_070            Frequency ex-spouse/partner seeing child -  - Past 12 months
+
+           VALUE  LABEL
+               1  Daily
+               2  At least once a week
+               3  At least once a month
+               4  Less than once a month
+               5  Not at all
+               6  Other
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/columns: 1/240-241
+
+      ________________________________________________________________________
+
+      tsa_080            Frequency communication with ex-spouse/partner - Past 12 months
+
+           VALUE  LABEL
+               1  Daily
+               2  At least once a week
+               3  At least once a month
+               4  Less than once a month
+               5  Not at all
+               6  Other
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/columns: 1/243-244
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 14, 2022

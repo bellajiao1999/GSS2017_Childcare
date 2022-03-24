@@ -1,0 +1,639 @@
+*******************************************************************
+*  Stata "do-file" file with labels and missing data specifications
+*  Created by ddltox on Mar 14, 2022  (Mon 07:21 PM EDT)
+*  DDL source file: "/web/sda.artsci.utoronto.ca/htdocs/sdaweb/tmpdir/AAghZVx4.txt".
+*
+*  Note that the data dictionary is given at the end of this file.
+*  Put the dictionary into a separate file (by editing this file).
+*  Then specify below the name of the dictionary file.
+*
+*  DDL file gives the following dataset description:
+*    Records per case: 1
+*    Record length:    244
+*******************************************************************
+
+
+label data "General Social Survey (GSS), Cycle 31, 2017: Family"
+
+#delimit ;
+label define ngrdchdc  0 "None" 15 "15 or more grandchildren" 96 "Valid skip" 
+                       97 "Don't know" 98 "Refusal" 99 "Not stated" ;
+label define pumfid    99996 "Valid skip" 99997 "Don't know" 99998 "Refusal" 
+                       99999 "Not stated" ;
+label define ats_120   1 "Verbal only" 2 "Written only" 
+                       3 "Both verbal and written" 
+                       4 "No arrangement or agreement" 6 "Valid skip" 
+                       7 "Don't know" 8 "Refusal" 9 "Not stated" ;
+label define ats_130   
+                       1 "You and your (ex-spouse/ex-partner/ex-spouse/ex-spouse or..." 
+                       2 "With assistance, such as mediation, a lawyer, other fami..." 
+                       3 "A court order" 4 "Other" 6 "Valid skip" 
+                       7 "Don't know" 8 "Refusal" 9 "Not stated" ;
+label define ats_140   1 "All of the time" 2 "Most of the time" 3 "Sometimes" 
+                       4 "Rarely" 5 "Never" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define ats_145   1 "General conflict" 
+                       2 "Arrangements no longer worked - changed circumstances" 
+                       3 "You or your (ex-spouse/ex-partner/ex-spouse/ex-spouse or..." 
+                       4 "Other" 6 "Valid skip" 7 "Don't know" 8 "Refusal" 
+                       9 "Not stated" ;
+label define cc_10_1   1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define cc_20_1   1 "On a regular basis" 
+                       2 "On an irregular or occasional basis" 6 "Valid skip" 
+                       7 "Don't know" 8 "Refusal" 9 "Not stated" ;
+label define cc_30_1   1 "In the child's home" 2 "A home daycare" 
+                       3 "A preschool centre or a nursery school" 
+                       4 "A daycare (or CPE/EMPTY)" 
+                       5 "Before or after school program" 
+                       6 "Another type of childcare" 96 "Valid skip" 
+                       97 "Don't know" 98 "Refusal" 99 "Not stated" ;
+label define cc_40_1   1 "A relative" 2 "A non-relative" 6 "Valid skip" 
+                       7 "Don't know" 8 "Refusal" 9 "Not stated" ;
+label define cc_50_1   1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define cc_60_1   1 "Location (close to work, home, school, etc.)" 
+                       2 "Affordable cost" 3 "Hours of operation" 
+                       4 "Care by someone trustworthy (family member, friend)" 
+                       5 "My other children go (have gone) there" 
+                       6 "Was recommended by someone" 7 "It is safe" 
+                       8 "Only option available" 9 "Learning program" 
+                       10 "For the child's socialization" 
+                       11 "Low child-adult ratio/more employees/one on one time" 
+                       12 "Other - Specify" 96 "Valid skip" 97 "Don't know" 
+                       98 "Refusal" 99 "Not stated" ;
+label define cca50_1   1 "1 day per week" 2 "2 days per week" 
+                       3 "3 days per week" 4 "4 days per week" 
+                       5 "5 days per week" 6 "6 days per week or more" 
+                       7 "A few times a month" 8 "Not in the last month" 
+                       96 "Valid skip" 97 "Don't know" 98 "Refusal" 
+                       99 "Not stated" ;
+label define cca551c   1 "Less than 10 hours" 2 "10 to 19 hours" 
+                       3 "20 to 29 hours" 4 "30 to 39 hours" 
+                       5 "40 hours and more" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define cca651c   1 "$0" 2 "Less than $100" 3 "$100 to $499" 
+                       4 "$500 to $999" 5 "$1,000 and more" 6 "Valid skip" 
+                       7 "Don't know" 8 "Refusal" 9 "Not stated" ;
+label define cca70_1   1 "Per day" 2 "Per week" 3 "Every two weeks" 
+                       4 "Per month" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define ccdyc1c   1 "$0" 2 "$0.01 to $9.99" 3 "$10.00 to $19.99" 
+                       4 "$20.00 to $29.00" 5 "$30.00 to $39.99" 
+                       6 "$40.00 to $49.99" 7 "$50.00 and more" 
+                       96 "Valid skip" 97 "Don't know" 98 "Refusal" 
+                       99 "Not stated" ;
+label define ccmoc1c   1 "$0" 2 "$0.01 to $99.99" 3 "$100.00 to $199.99" 
+                       4 "$200.00 to $299.99" 5 "$300.00 to $399.99" 
+                       6 "$400.00 to $499.99" 7 "$500.00 and more" 
+                       96 "Valid skip" 97 "Don't know" 98 "Refusal" 
+                       99 "Not stated" ;
+label define ccw2c1c   1 "$0" 2 "$0.01 and more" 6 "Valid skip" 
+                       7 "Don't know" 8 "Refusal" 9 "Not stated" ;
+label define ccwkc1c   1 "$0" 2 "$0.01 to $49.99" 3 "$50.00 to $99.99" 
+                       4 "$100.00 to $199.99" 5 "$200.00 and more" 
+                       6 "Valid skip" 7 "Don't know" 8 "Refusal" 
+                       9 "Not stated" ;
+label define totccar   1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define totccps   1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define totccsa   1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define cor_015   1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define cor_020   1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define cor_031   1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define cor_041   1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define cp30_1c   1 "The cost is too high" 
+                       2 "No places available / on a waiting list" 
+                       3 "No relatives in the area" 
+                       4 "Cannot afford to stay home" 5 "Other reason" 
+                       96 "Valid skip" 97 "Don't know" 98 "Refusal" 
+                       99 "Not stated" ;
+label define cp_10_1   1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define cp_20_1   
+                       1 "Child cared for by respondent or spouse (full-time or pa..." 
+                       2 "Care in someone's home by a non-relative" 
+                       3 "Care in someone's home by a relative" 
+                       4 "Care in child's home by a non-relative" 
+                       5 "Care in child's home by a relative" 
+                       6 "Daycare centre (or CPE/Blank)" 
+                       7 "Before and after school program" 
+                       8 "Nursery school / preschool" 9 "Other" 
+                       96 "Valid skip" 97 "Don't know" 98 "Refusal" 
+                       99 "Not stated" ;
+label define csp_100   1 "Yes, provided financial support" 
+                       2 "Yes, received financial support" 
+                       3 "Yes, I have provided and received" 
+                       4 "No, did not provide nor receive" 6 "Valid skip" 
+                       7 "Don't know" 8 "Refusal" 9 "Not stated" ;
+label define csp_105   1 "Yes, providing financial support" 
+                       2 "Yes, receiving financial support" 
+                       3 "Yes, providing and receiving" 
+                       4 "No, neither providing nor receiving" 6 "Valid skip" 
+                       7 "Don't know" 8 "Refusal" 9 "Not stated" ;
+label define csp_110a  1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define csp_110b  1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define csp_110c  1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define csp_110d  1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define csp_150   1 "Verbal only" 2 "Written only" 
+                       3 "Both verbal and written" 
+                       4 "No arrangement or agreement" 6 "Valid skip" 
+                       7 "Don't know" 8 "Refusal" 9 "Not stated" ;
+label define csp_160   
+                       1 "You and your (ex-spouse/ex-partner/ex-spouse/ex-spouse or..." 
+                       2 "With assistance, such as mediation, a lawyer, other fami..." 
+                       3 "A court order" 4 "Other" 6 "Valid skip" 
+                       7 "Don't know" 8 "Refusal" 9 "Not stated" ;
+label define csp_170   1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define acompstc  15 "15 years and under" 40 "40 years and over" 
+                       96 "Valid skip" 97 "Don't know" 98 "Refusal" 
+                       99 "Not stated" ;
+label define ede_01a   1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define ede_01b   1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define ede_01c   1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define ede_02    1 "A full-time student" 2 "A part-time student" 
+                       3 "Both full-time and part-time student" 
+                       6 "Valid skip" 7 "Don't know" 8 "Refusal" 
+                       9 "Not stated" ;
+label define eop_200   1 "Less than high school diploma or its equivalent" 
+                       2 "High school diploma or a high school equivalency certi..." 
+                       3 "Trade certificate or diploma" 
+                       4 "College, CEGEP or other non-university certificate or d..." 
+                       5 "University certificate or diploma below the bachelor's level" 
+                       6 "Bachelor's degree (e.g. B.A., B.Sc., LL.B.)" 
+                       7 "University certificate, diploma or degree above the ba..." 
+                       96 "Valid skip" 97 "Don't know" 98 "Refusal" 
+                       99 "Not stated" ;
+label define eop_210   1 "High school graduation diploma" 
+                       2 "High school equivalency certificate (such as General Edu..." 
+                       6 "Valid skip" 7 "Don't know" 8 "Refusal" 
+                       9 "Not stated" ;
+label define eop_220   
+                       1 "Registered Apprenticeship certificate (including Certifi..." 
+                       2 "Other trades certificate or diploma from a trade school ..." 
+                       6 "Valid skip" 7 "Don't know" 8 "Refusal" 
+                       9 "Not stated" ;
+label define eop_230   1 "Less than 3 months" 
+                       2 "3 months to less than 1 year" 3 "1 year to 2 years" 
+                       4 "More than 2 years" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define eop_240   
+                       1 "University certificate or diploma above the bachelor's level" 
+                       2 "Degree in medicine/dentistry/veterinary medicine/optometry" 
+                       3 "Master's degree" 4 "Earned doctorate" 
+                       6 "Valid skip" 7 "Don't know" 8 "Refusal" 
+                       9 "Not stated" ;
+label define fse_100   1 "Yes, provided financial support" 
+                       2 "Yes, received financial support" 
+                       3 "Yes, I have provided and received" 
+                       4 "No, did not provide nor receive" 6 "Valid skip" 
+                       7 "Don't know" 8 "Refusal" 9 "Not stated" ;
+label define fse_105   1 "Yes, providing financial support" 
+                       2 "Yes, receiving financial support" 
+                       3 "Yes, providing and receiving" 
+                       4 "No, neither providing nor receiving" 6 "Valid skip" 
+                       7 "Don't know" 8 "Refusal" 9 "Not stated" ;
+label define fse_110a  1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define fse_110b  1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define fse_110c  1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define fse_110d  1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define fsp135gr  1 "Less than $3,000" 2 "$3,000 to $4,999" 
+                       3 "$5,000 to $9,999" 4 "$10,000 and more" 
+                       6 "Valid skip" 7 "Don't know" 8 "Refusal" 
+                       9 "Not stated" ;
+label define fsp_130   1 "Weekly" 2 "Bi-weekly" 3 "Monthly" 
+                       4 "Other (in one lump sum, irregularly, as needed, etc.)" 
+                       6 "Valid skip" 7 "Don't know" 8 "Refusal" 
+                       9 "Not stated" ;
+label define fsp_320   1 "The full amount" 2 "Less than full amount" 
+                       3 "Nothing" 6 "Valid skip" 7 "Don't know" 8 "Refusal" 
+                       9 "Not stated" ;
+label define fsr135gr  1 "Less than $3,000" 2 "$3,000 to $4,999" 
+                       3 "$5,000 to $9,999" 4 "$10,000 and more" 
+                       6 "Valid skip" 7 "Don't know" 8 "Refusal" 
+                       9 "Not stated" ;
+label define fsr_130   1 "Weekly" 2 "Bi-weekly" 3 "Monthly" 
+                       4 "Other (in one lump sum, irregularly, as needed, etc.)" 
+                       6 "Valid skip" 7 "Don't know" 8 "Refusal" 
+                       9 "Not stated" ;
+label define fsr_310   
+                       1 "Never missed a payment (made all payments on time and full)" 
+                       2 "Made all payments but some or all were late" 
+                       3 "Missed a few payments that were due (a few payments were..." 
+                       4 "Missed most or all payments" 6 "Valid skip" 
+                       7 "Don't know" 8 "Refusal" 9 "Not stated" ;
+label define mdc_117   
+                       1 "You and your (ex-spouse/ex-partner/ex-spouse/ex-spouse o..." 
+                       2 "Mainly you" 
+                       3 "Mainly your (ex-spouse/ex-partner/ex-spouse/ex-spouse or..." 
+                       4 "Someone else" 
+                       5 "Varies depending on what the decision is" 6 "Other" 
+                       96 "Valid skip" 97 "Don't know" 98 "Refusal" 
+                       99 "Not stated" ;
+label define mdc_120   1 "Verbal only" 2 "Written only" 
+                       3 "Both verbal and written" 
+                       4 "No arrangement or agreement" 6 "Valid skip" 
+                       7 "Don't know" 8 "Refusal" 9 "Not stated" ;
+label define mdc_130   
+                       1 "You and your (ex-spouse/ex-partner/ex-spouse/ex-spouse or..." 
+                       2 "With assistance, such as mediation, a lawyer, other fami..." 
+                       3 "A court order" 4 "Other" 6 "Valid skip" 
+                       7 "Don't know" 8 "Refusal" 9 "Not stated" ;
+label define bapast5y  1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define mpl_105a  1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define mpl_105b  1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define mpl_105c  1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define mpl_105d  1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define mpl_105e  1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define mpl_105i  1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define mpl_107   1 "A full-time student" 2 "A part-time student" 
+                       3 "Both full-time and part-time student" 
+                       6 "Valid skip" 7 "Don't know" 8 "Refusal" 
+                       9 "Not stated" ;
+label define mpl_108   1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define nuc1_1c   1 "Unemployed" 
+                       2 "Maternity, paternity or parental leave" 
+                       3 "One of the parents wishes to stay at home with the child" 
+                       4 "Doesnt need or doesnt want" 
+                       5 "Work or school schedules are unpredictable and variable" 
+                       6 "The cost of childcare is too high" 7 "Other reason" 
+                       96 "Valid skip" 97 "Don't know" 98 "Refusal" 
+                       99 "Not stated" ;
+label define nuc2_1c   1 "Unemployed" 
+                       2 "Maternity, paternity or parental leave" 
+                       3 "One of the parents wishes to stay at home with the child" 
+                       4 "Doesnt need or doesnt want" 
+                       5 "Work or school schedules are unpredictable and variable" 
+                       6 "The cost of childcare is too high" 7 "Other reason" 
+                       96 "Valid skip" 97 "Don't know" 98 "Refusal" 
+                       99 "Not stated" ;
+label define nwe_110   96 "Valid skip" 97 "Don't know" 98 "Refusal" 
+                       99 "Not stated" ;
+label define oto_100   1 "Yes" 2 "No" 
+                       3 "Not applicable - Other parent was not working before bir..." 
+                       4 "No other parent involved" 6 "Valid skip" 
+                       7 "Don't know" 8 "Refusal" 9 "Not stated" ;
+label define rew_10    1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define worklw    1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define worklyr   1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define rto_100   1 "A paid worker" 2 "Self-employed" 
+                       3 "An unpaid family worker" 6 "Valid skip" 
+                       7 "Don't know" 8 "Refusal" 9 "Not stated" ;
+label define rto_101   1 "Full-time" 2 "Part-time" 
+                       3 "Other (on call, contract)" 6 "Valid skip" 
+                       7 "Don't know" 8 "Refusal" 9 "Not stated" ;
+label define rto_110   1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define rto_120   1 "Other parent took leave" 
+                       2 "Not eligible for leave/Self-employed" 
+                       3 "Could not afford to lose a/my salary" 
+                       4 "Worried of losing job" 
+                       5 "Family or friends take care of child" 
+                       6 "Found available/convenient daycare" 
+                       7 "Preferred to work" 
+                       8 "Job permitted to take care of the child and work" 
+                       9 "Quit job/Fired/Discharged/Laid-off" 10 "Other" 
+                       96 "Valid skip" 97 "Don't know" 98 "Refusal" 
+                       99 "Not stated" ;
+label define rto_130a  1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define rto_130b  1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define rto_130c  1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define rto_130d  1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define rto_130e  1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define rto_130f  1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define rto_130g  1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define arretwk   99.6 "Valid skip" 99.7 "Don't know" 99.8 "Refusal" 
+                       99.9 "Not stated" ;
+label define rtw_300   1 "Yes" 2 "No" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define sts_410   1 "Very satisfied" 2 "Satisfied" 3 "Dissatisfied" 
+                       4 "Very dissatisfied" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define sts_420   
+                       1 "(Ex-spouse/Ex-partner) often changes his or her time wit..." 
+                       2 "(Ex-spouse/Ex-partner) cancels time with the child and d..." 
+                       3 "Would like to have a different amount of time spent with..." 
+                       4 "Concerned about poor behaviour or parenting" 
+                       5 "Other - Specify" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define sts_450   1 "Very satisfied" 2 "Satisfied" 3 "Dissatisfied" 
+                       4 "Very dissatisfied" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define sts_460   
+                       1 "(Ex-spouse/Ex-partner) often changes his or her time wit..." 
+                       2 "(Ex-spouse/Ex-partner) cancels time with the child and d..." 
+                       3 "Would like to have a different amount of time spent with..." 
+                       4 "Concerned about poor behaviour or parenting" 
+                       5 "Other - Specify" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define tsa_010   1 "Only with you" 2 "Mainly with you" 
+                       3 "Only with your (ex-spouse/ex-partner/ex-spouse/ex-spouse..." 
+                       4 "Mainly with your (ex-spouse/ex-partner/ex-spouse/ex-spou..." 
+                       5 "About the same amount of time in both parents home" 
+                       6 "Another arrangement" 96 "Valid skip" 
+                       97 "Don't know" 98 "Refusal" 99 "Not stated" ;
+label define tsa_020   1 "Less than 40%" 2 "Between 40% and 60%" 
+                       3 "More than 60%" 6 "Valid skip" 7 "Don't know" 
+                       8 "Refusal" 9 "Not stated" ;
+label define tsa_030   1 "Daily" 2 "At least once a week" 
+                       3 "At least once a month" 4 "Less than once a month" 
+                       5 "Not at all" 6 "Other" 96 "Valid skip" 
+                       97 "Don't know" 98 "Refusal" 99 "Not stated" ;
+label define tsa_040   1 "Daily" 2 "At least once a week" 
+                       3 "At least once a month" 4 "Less than once a month" 
+                       5 "Not at all" 6 "Other" 96 "Valid skip" 
+                       97 "Don't know" 98 "Refusal" 99 "Not stated" ;
+label define tsa_050   96 "Valid skip" 97 "Don't know" 98 "Refusal" 
+                       99 "Not stated" ;
+label define tsa_060   96 "Valid skip" 97 "Don't know" 98 "Refusal" 
+                       99 "Not stated" ;
+label define tsa_070   1 "Daily" 2 "At least once a week" 
+                       3 "At least once a month" 4 "Less than once a month" 
+                       5 "Not at all" 6 "Other" 96 "Valid skip" 
+                       97 "Don't know" 98 "Refusal" 99 "Not stated" ;
+label define tsa_080   1 "Daily" 2 "At least once a week" 
+                       3 "At least once a month" 4 "Less than once a month" 
+                       5 "Not at all" 6 "Other" 96 "Valid skip" 
+                       97 "Don't know" 98 "Refusal" 99 "Not stated" ;
+
+
+#delimit cr
+
+*******************************************************************
+infile using X
+* Replace 'X' with the name of the dictionary file. 
+*
+* The contents of the dictionary are given at the end of this file.
+* Put the dictionary into a separate file (by editing this file).
+* Then specify here the name of the dictionary file.
+*******************************************************************
+* The md, min and max specifications were translated 
+* into the following "REPLACE...IF" statements:
+
+replace ngrdchdc = . if (ngrdchdc >= 96 & ngrdchdc <= 99)
+replace pumfid = . if (pumfid >= 99996 & pumfid <= 99999)
+replace ats_120 = . if (ats_120 >= 6 & ats_120 <= 9)
+replace ats_130 = . if (ats_130 >= 6 & ats_130 <= 9)
+replace ats_140 = . if (ats_140 >= 6 & ats_140 <= 9)
+replace ats_145 = . if (ats_145 >= 6 & ats_145 <= 9)
+replace cc_10_1 = . if (cc_10_1 >= 6 & cc_10_1 <= 9)
+replace cc_20_1 = . if (cc_20_1 >= 6 & cc_20_1 <= 9)
+replace cc_30_1 = . if (cc_30_1 >= 96 & cc_30_1 <= 99)
+replace cc_40_1 = . if (cc_40_1 >= 6 & cc_40_1 <= 9)
+replace cc_50_1 = . if (cc_50_1 >= 6 & cc_50_1 <= 9)
+replace cc_60_1 = . if (cc_60_1 >= 96 & cc_60_1 <= 99)
+replace cca50_1 = . if (cca50_1 >= 96 & cca50_1 <= 99)
+replace cca551c = . if (cca551c >= 6 & cca551c <= 9)
+replace cca651c = . if (cca651c >= 6 & cca651c <= 9)
+replace cca70_1 = . if (cca70_1 >= 6 & cca70_1 <= 9)
+replace ccdyc1c = . if (ccdyc1c >= 96 & ccdyc1c <= 99)
+replace ccmoc1c = . if (ccmoc1c >= 96 & ccmoc1c <= 99)
+replace ccw2c1c = . if (ccw2c1c >= 6 & ccw2c1c <= 9)
+replace ccwkc1c = . if (ccwkc1c >= 6 & ccwkc1c <= 9)
+replace totccar = . if (totccar >= 6 & totccar <= 9)
+replace totccps = . if (totccps >= 6 & totccps <= 9)
+replace totccsa = . if (totccsa >= 6 & totccsa <= 9)
+replace cor_015 = . if (cor_015 >= 6 & cor_015 <= 9)
+replace cor_020 = . if (cor_020 >= 6 & cor_020 <= 9)
+replace cor_031 = . if (cor_031 >= 6 & cor_031 <= 9)
+replace cor_041 = . if (cor_041 >= 6 & cor_041 <= 9)
+replace cp30_1c = . if (cp30_1c >= 96 & cp30_1c <= 99)
+replace cp_10_1 = . if (cp_10_1 >= 6 & cp_10_1 <= 9)
+replace cp_20_1 = . if (cp_20_1 >= 96 & cp_20_1 <= 99)
+replace csp_100 = . if (csp_100 >= 6 & csp_100 <= 9)
+replace csp_105 = . if (csp_105 >= 6 & csp_105 <= 9)
+replace csp_110a = . if (csp_110a >= 6 & csp_110a <= 9)
+replace csp_110b = . if (csp_110b >= 6 & csp_110b <= 9)
+replace csp_110c = . if (csp_110c >= 6 & csp_110c <= 9)
+replace csp_110d = . if (csp_110d >= 6 & csp_110d <= 9)
+replace csp_150 = . if (csp_150 >= 6 & csp_150 <= 9)
+replace csp_160 = . if (csp_160 >= 6 & csp_160 <= 9)
+replace csp_170 = . if (csp_170 >= 6 & csp_170 <= 9)
+replace acompstc = . if (acompstc >= 96 & acompstc <= 99)
+replace ede_01a = . if (ede_01a >= 6 & ede_01a <= 9)
+replace ede_01b = . if (ede_01b >= 6 & ede_01b <= 9)
+replace ede_01c = . if (ede_01c >= 6 & ede_01c <= 9)
+replace ede_02 = . if (ede_02 >= 6 & ede_02 <= 9)
+replace eop_200 = . if (eop_200 >= 96 & eop_200 <= 99)
+replace eop_210 = . if (eop_210 >= 6 & eop_210 <= 9)
+replace eop_220 = . if (eop_220 >= 6 & eop_220 <= 9)
+replace eop_230 = . if (eop_230 >= 6 & eop_230 <= 9)
+replace eop_240 = . if (eop_240 >= 6 & eop_240 <= 9)
+replace fse_100 = . if (fse_100 >= 6 & fse_100 <= 9)
+replace fse_105 = . if (fse_105 >= 6 & fse_105 <= 9)
+replace fse_110a = . if (fse_110a >= 6 & fse_110a <= 9)
+replace fse_110b = . if (fse_110b >= 6 & fse_110b <= 9)
+replace fse_110c = . if (fse_110c >= 6 & fse_110c <= 9)
+replace fse_110d = . if (fse_110d >= 6 & fse_110d <= 9)
+replace fsp135gr = . if (fsp135gr >= 6 & fsp135gr <= 9)
+replace fsp_130 = . if (fsp_130 >= 6 & fsp_130 <= 9)
+replace fsp_320 = . if (fsp_320 >= 6 & fsp_320 <= 9)
+replace fsr135gr = . if (fsr135gr >= 6 & fsr135gr <= 9)
+replace fsr_130 = . if (fsr_130 >= 6 & fsr_130 <= 9)
+replace fsr_310 = . if (fsr_310 >= 6 & fsr_310 <= 9)
+replace mdc_117 = . if (mdc_117 >= 96 & mdc_117 <= 99)
+replace mdc_120 = . if (mdc_120 >= 6 & mdc_120 <= 9)
+replace mdc_130 = . if (mdc_130 >= 6 & mdc_130 <= 9)
+replace bapast5y = . if (bapast5y >= 6 & bapast5y <= 9)
+replace mpl_105a = . if (mpl_105a >= 6 & mpl_105a <= 9)
+replace mpl_105b = . if (mpl_105b >= 6 & mpl_105b <= 9)
+replace mpl_105c = . if (mpl_105c >= 6 & mpl_105c <= 9)
+replace mpl_105d = . if (mpl_105d >= 6 & mpl_105d <= 9)
+replace mpl_105e = . if (mpl_105e >= 6 & mpl_105e <= 9)
+replace mpl_105i = . if (mpl_105i >= 6 & mpl_105i <= 9)
+replace mpl_107 = . if (mpl_107 >= 6 & mpl_107 <= 9)
+replace mpl_108 = . if (mpl_108 >= 6 & mpl_108 <= 9)
+replace nuc1_1c = . if (nuc1_1c >= 96 & nuc1_1c <= 99)
+replace nuc2_1c = . if (nuc2_1c >= 96 & nuc2_1c <= 99)
+replace nwe_110 = . if (nwe_110 >= 96 & nwe_110 <= 99)
+replace oto_100 = . if (oto_100 >= 6 & oto_100 <= 9)
+replace rew_10 = . if (rew_10 >= 6 & rew_10 <= 9)
+replace worklw = . if (worklw >= 6 & worklw <= 9)
+replace worklyr = . if (worklyr >= 6 & worklyr <= 9)
+replace rto_100 = . if (rto_100 >= 6 & rto_100 <= 9)
+replace rto_101 = . if (rto_101 >= 6 & rto_101 <= 9)
+replace rto_110 = . if (rto_110 >= 6 & rto_110 <= 9)
+replace rto_120 = . if (rto_120 >= 96 & rto_120 <= 99)
+replace rto_130a = . if (rto_130a >= 6 & rto_130a <= 9)
+replace rto_130b = . if (rto_130b >= 6 & rto_130b <= 9)
+replace rto_130c = . if (rto_130c >= 6 & rto_130c <= 9)
+replace rto_130d = . if (rto_130d >= 6 & rto_130d <= 9)
+replace rto_130e = . if (rto_130e >= 6 & rto_130e <= 9)
+replace rto_130f = . if (rto_130f >= 6 & rto_130f <= 9)
+replace rto_130g = . if (rto_130g >= 6 & rto_130g <= 9)
+replace arretwk = . if (arretwk >= 99.6 & arretwk <= 99.9)
+replace rtw_300 = . if (rtw_300 >= 6 & rtw_300 <= 9)
+replace sts_410 = . if (sts_410 >= 6 & sts_410 <= 9)
+replace sts_420 = . if (sts_420 >= 6 & sts_420 <= 9)
+replace sts_450 = . if (sts_450 >= 6 & sts_450 <= 9)
+replace sts_460 = . if (sts_460 >= 6 & sts_460 <= 9)
+replace tsa_010 = . if (tsa_010 >= 96 & tsa_010 <= 99)
+replace tsa_020 = . if (tsa_020 >= 6 & tsa_020 <= 9)
+replace tsa_030 = . if (tsa_030 >= 96 & tsa_030 <= 99)
+replace tsa_040 = . if (tsa_040 >= 96 & tsa_040 <= 99)
+replace tsa_050 = . if (tsa_050 >= 96 & tsa_050 <= 99)
+replace tsa_060 = . if (tsa_060 >= 96 & tsa_060 <= 99)
+replace tsa_070 = . if (tsa_070 >= 96 & tsa_070 <= 99)
+replace tsa_080 = . if (tsa_080 >= 96 & tsa_080 <= 99)
+
+
+dictionary using Y {
+*****************************************************************
+*  Replace 'Y' with the name of the data file.
+*  The default suffix is '.raw'.
+*
+*  Put this dictionary into a separate file (with the suffix .dct).
+*  (The first line of the dictionary file must contain the
+*  'dictionary' command.)
+*
+*  Then edit the name of that dictionary file into the 'do-file'
+*  portion of the STATA definitions.
+*******************************************************************
+*  Records per case:
+_lines(1)
+
+_line(1)
+
+_column(1)     long  CASEID             %5f    ""
+_column(7)     int   ngrdchdc :ngrdchdc %2f    "Number of grandchildren the respondent has."
+_column(10)    long  pumfid   :pumfid   %5f    "Record identification"
+_column(16)    int   ats_120  :ats_120  %1f    "Agreement/Arrangement to schedule time children spend with each parent"
+_column(18)    int   ats_130  :ats_130  %1f    "Type of arrangement for time spent with children"
+_column(20)    int   ats_140  :ats_140  %1f    "Arrangements overall  followed - Past 12 months"
+_column(22)    int   ats_145  :ats_145  %1f    "Main reason arrangement was not followed?"
+_column(24)    int   cc_10_1  :cc_10_1  %1f    "Arran. (first name child_1) to be look. after - Past 12 mths - Child_1"
+_column(26)    int   cc_20_1  :cc_20_1  %1f    "Childcare arrangement used on regular or irregular basis"
+_column(28)    int   cc_30_1  :cc_30_1  %2f    "Main childcare arrangement currently using - Child_1"
+_column(31)    int   cc_40_1  :cc_40_1  %1f    "Person taking care of child is a relative or a non-relative"
+_column(33)    int   cc_50_1  :cc_50_1  %1f    "Government licensed or family daycare agency approved - Child_1"
+_column(35)    int   cc_60_1  :cc_60_1  %2f    "Main reason chose childcare type - Child_1"
+_column(38)    int   cca50_1  :cca50_1  %2f    "Past month, how oft. used child care arra. for (first name of child_1)"
+_column(41)    int   cca551c  :cca551c  %1f    "Number of hours per week"
+_column(43)    int   cca651c  :cca651c  %1f    "Amount spent for child care arrangement - Child 1"
+_column(45)    int   cca70_1  :cca70_1  %1f    "Costs"
+_column(47)    int   ccdyc1c  :ccdyc1c  %2f    "Average costs of child care arrangement (per day) - Child_1"
+_column(50)    int   ccmoc1c  :ccmoc1c  %2f    "Average costs of child care arrangement (per month) - Child_1"
+_column(53)    int   ccw2c1c  :ccw2c1c  %1f    "Average costs of child care arrangement (per 2 weeks) - Child_1"
+_column(55)    int   ccwkc1c  :ccwkc1c  %1f    "Average costs of child care arrangement (per week) - Child_1"
+_column(57)    int   totccar  :totccar  %1f    "Resp has used a form of regular childcare arrang for at least 1 child"
+_column(59)    int   totccps  :totccps  %1f    "Resp used childcare arrang. for at least one pre-school aged children"
+_column(61)    int   totccsa  :totccsa  %1f    "Resp used childcare arrangement for at least one school aged child"
+_column(63)    int   cor_015  :cor_015  %1f    "Lived with step-children"
+_column(65)    int   cor_020  :cor_020  %1f    "Adopted children"
+_column(67)    int   cor_031  :cor_031  %1f    "Ever fathered child"
+_column(69)    int   cor_041  :cor_041  %1f    "Ever given birth to a child"
+_column(71)    int   cp30_1c  :cp30_1c  %2f    "Main reason for not using preferred form of childcare - Child_1"
+_column(74)    int   cp_10_1  :cp_10_1  %1f    "Prefer to use different form of childcare care - Child_1"
+_column(76)    int   cp_20_1  :cp_20_1  %2f    "Preferred type of childcare - Child_1"
+_column(79)    int   csp_100  :csp_100  %1f    "Ever provide or received financial support for children"
+_column(81)    int   csp_105  :csp_105  %1f    "Currently provide or receive financial support for children"
+_column(83)    int   csp_110a :csp_110a %1f    "Financial support - Child support (periodic payments)"
+_column(85)    int   csp_110b :csp_110b %1f    "Financial support - Childs expenses"
+_column(87)    int   csp_110c :csp_110c %1f    "Financial support - A lump sum amount"
+_column(89)    int   csp_110d :csp_110d %1f    "Financial support - Other"
+_column(91)    int   csp_150  :csp_150  %1f    "Arrangement/Agreement for financial support of children"
+_column(93)    int   csp_160  :csp_160  %1f    "Arrangement/agreement financial support for children"
+_column(95)    int   csp_170  :csp_170  %1f    "Arrangement registered Maintenance Enforcement Program"
+_column(97)    int   acompstc :acompstc %2f    "Age of respondent when completed studies"
+_column(100)   int   ede_01a  :ede_01a  %1f    "Type of educational institution - Elementary/high school"
+_column(102)   int   ede_01b  :ede_01b  %1f    "Type of educational institution - Trade school, college"
+_column(104)   int   ede_01c  :ede_01c  %1f    "Type of educational institution - University"
+_column(106)   int   ede_02   :ede_02   %1f    "Education - Enrollment status"
+_column(108)   int   eop_200  :eop_200  %2f    "Highest level of education - Spouse/Partner"
+_column(111)   int   eop_210  :eop_210  %1f    "High school diploma/equivalency certificate"
+_column(113)   int   eop_220  :eop_220  %1f    "Trade certificate or diploma"
+_column(115)   int   eop_230  :eop_230  %1f    "College, CEGEP or other non-university certificate or diploma"
+_column(117)   int   eop_240  :eop_240  %1f    "University certificate, diploma or degree above the bachelor's level"
+_column(119)   int   fse_100  :fse_100  %1f    "Ever provided or received financ. supp. for/from ex-spouse/Ex-partner"
+_column(121)   int   fse_105  :fse_105  %1f    "Currently providing/receiving finan. sup. for/from- Ex-spou./Ex-partn."
+_column(123)   int   fse_110a :fse_110a %1f    "Financial support - Periodic payments"
+_column(125)   int   fse_110b :fse_110b %1f    "Financial support - Gave a lump sum amount or specific asset"
+_column(127)   int   fse_110c :fse_110c %1f    "Financial support - Contribution to household costs or other expenses"
+_column(129)   int   fse_110d :fse_110d %1f    "Financial support - Other"
+_column(131)   int   fsp135gr :fsp135gr %1f    "Total child support amount paid - Past 12 months"
+_column(133)   int   fsp_130  :fsp_130  %1f    "Frequency financial support being paid"
+_column(135)   int   fsp_320  :fsp_320  %1f    "Paid all payment according to arrangement"
+_column(137)   int   fsr135gr :fsr135gr %1f    "Total child support amount received - Past 12 months"
+_column(139)   int   fsr_130  :fsr_130  %1f    "Frequency received financial support"
+_column(141)   int   fsr_310  :fsr_310  %1f    "Received all support from ex-spouse/partner according to arrangement"
+_column(143)   int   mdc_117  :mdc_117  %2f    "Division major decisions about childrens health, relig. and/or edu."
+_column(146)   int   mdc_120  :mdc_120  %1f    "Agreement for important decisions"
+_column(148)   int   mdc_130  :mdc_130  %1f    "Arrangement/agreement for important decisions"
+_column(150)   int   bapast5y :bapast5y %1f    "Respondent had a birth/adopted child - Past 5 years"
+_column(152)   int   mpl_105a :mpl_105a %1f    "Main activity - Working at a paid job/business"
+_column(154)   int   mpl_105b :mpl_105b %1f    "Main activity - Looking for paid work"
+_column(156)   int   mpl_105c :mpl_105c %1f    "Main activity - Going to school"
+_column(158)   int   mpl_105d :mpl_105d %1f    "Main activity - Caring for children"
+_column(160)   int   mpl_105e :mpl_105e %1f    "Main activity - Household work"
+_column(162)   int   mpl_105i :mpl_105i %1f    "Main activity - Other - Specify"
+_column(164)   int   mpl_107  :mpl_107  %1f    "Type of student"
+_column(166)   int   mpl_108  :mpl_108  %1f    "Job or self-employed - Before the birth/adoption"
+_column(168)   int   nuc1_1c  :nuc1_1c  %2f    "Main reason for not using childcare arrangements - Child_1"
+_column(171)   int   nuc2_1c  :nuc2_1c  %2f    "Main reason for not regular. using childcare arrangements - Child_1"
+_column(174)   int   nwe_110  :nwe_110  %2f    "Number of weeks employed - Past 12 months"
+_column(177)   int   oto_100  :oto_100  %1f    "Other parent take time off before/after birth/adoption"
+_column(179)   int   rew_10   :rew_10   %1f    "Ever worked at paid job/own business"
+_column(181)   int   worklw   :worklw   %1f    "Respondent worked at paid job or business last week"
+_column(183)   int   worklyr  :worklyr  %1f    "Respondent worked at paid job or business last year (yes/no)"
+_column(185)   int   rto_100  :rto_100  %1f    "Main type of work"
+_column(187)   int   rto_101  :rto_101  %1f    "Full-time/Part-time job"
+_column(189)   int   rto_110  :rto_110  %1f    "Respondent took time off from job  before/after birth/adoption"
+_column(191)   int   rto_120  :rto_120  %2f    "Main reason didn't take time off - After birth/adoption"
+_column(194)   int   rto_130a :rto_130a %1f    "Type of leave - Paternity/Maternity leave"
+_column(196)   int   rto_130b :rto_130b %1f    "Type of leave - Parental leave"
+_column(198)   int   rto_130c :rto_130c %1f    "Type of leave - Vacation"
+_column(200)   int   rto_130d :rto_130d %1f    "Type of leave - Leave without pay"
+_column(202)   int   rto_130e :rto_130e %1f    "Type of leave - Employer program"
+_column(204)   int   rto_130f :rto_130f %1f    "Type of leave - Sick leave"
+_column(206)   int   rto_130g :rto_130g %1f    "Type of leave - Other"
+_column(208)   float arretwk  :arretwk  %4.1f  "Age of youngest child when resp returned to work - Months"
+_column(213)   int   rtw_300  :rtw_300  %1f    "Respondent returned to same job"
+_column(215)   int   sts_410  :sts_410  %1f    "Satisfaction amount of time spent with child(ren)"
+_column(217)   int   sts_420  :sts_420  %1f    "Main reason for being dissatisfied - Respondent"
+_column(219)   int   sts_450  :sts_450  %1f    "Satisfaction amount of time ex-spouse/ex-partner spends with children"
+_column(221)   int   sts_460  :sts_460  %1f    "Main reason for being dissatisfied - Ex-spouse/partner"
+_column(223)   int   tsa_010  :tsa_010  %2f    "Person child usually lived with - Past 12 months"
+_column(226)   int   tsa_020  :tsa_020  %1f    "Percentage of time resp. lived with child - Past 12 months"
+_column(228)   int   tsa_030  :tsa_030  %2f    "Frequency respondent seeing child - Past 12 months"
+_column(231)   int   tsa_040  :tsa_040  %2f    "Communication frequency with respondent  - Past 12 months"
+_column(234)   int   tsa_050  :tsa_050  %2f    "Average number of overnights child spent with resp. - 2 weeks period"
+_column(237)   int   tsa_060  :tsa_060  %2f    "Average num. of overnights child spent with respondent - Typical month"
+_column(240)   int   tsa_070  :tsa_070  %2f    "Frequency ex-spouse/partner seeing child -  - Past 12 months"
+_column(243)   int   tsa_080  :tsa_080  %2f    "Frequency communication with ex-spouse/partner - Past 12 months"
+}
