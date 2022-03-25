@@ -1,5 +1,5 @@
 # GSS2017_Childcare
-# starter_folder
+# Important Update: The problem with the in-text cross-references is fixed. For example, by clicking on the number "6" on "Figure 6", the file will redirect you to the correct position of the figure 6.
 
 
 This paper explores the Childcare Service Aspect of the General Social Survey (GSS) Family, Cycle 31, 2017, Canada.
